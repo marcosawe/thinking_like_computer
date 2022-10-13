@@ -24,8 +24,8 @@ int main() {
     int numerosecreto = rand() % 100;
 
     // escolhendo o nivel de dificuldade
-    printf("Qual o nível de dificuldade?\n");
-    printf("(1) Fácil (2) Médio (3) Difícil\n\n");
+    printf("Qual o nivel de dificuldade?\n");
+    printf("(1) Facil (2) Medio (3) Dificil\n\n");
     printf("Escolha: ");
 
     scanf("%d", &nivel);
@@ -47,7 +47,7 @@ int main() {
 
         printf("-> Tentativa %d de %d\n", i, totaldetentativas);
 
-        printf("Chute um número: ");
+        printf("Chute um numero: ");
         scanf("%d", &chute);
 
         // tratando chute de numero negativo
@@ -63,9 +63,9 @@ int main() {
         if(acertou) {
             break;
         } else if(chute > numerosecreto) {
-            printf("\nSeu chute foi maior do que o número secreto!\n\n");
+            printf("\nSeu chute foi maior do que o numero secreto!\n\n");
         } else {
-            printf("\nSeu chute foi menor do que o número secreto!\n\n");
+            printf("\nSeu chute foi menor do que o numero secreto!\n\n");
         }
 
         // calcula a quantidade de pontos
@@ -76,9 +76,9 @@ int main() {
     // imprimindo mensagem de vitoria ou derrota
     printf("\n");
     if(acertou) {
-        printf("\nParabéns! Você acertou!\n");
-        printf("Você fez %.2f pontos. Até a próxima!\n\n", pontos);
+        printf("\nParabens! Voce acertou!\n");
+        printf("Voce fez %.2f pontos. Ate a proxima!\n\n", pontos);
     } else {
-        printf("\nVocê perdeu! Tente novamente!\n\n");
+        printf("\nVoce perdeu! Tente novamente!\n\n");
     }
 }
